@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandera Interactiva de México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🇲🇽 Bandera Interactiva de México</h1>
+        <p>Modifica únicamente tonos verdes y rojizos</p>
+
+        <div class="sliders">
+
+            <div class="control">
+                <label>🟢 Gama Verde</label>
+                <input type="range" id="verdeSlider" min="90" max="150" value="120">
+                <span id="verdeValor">120°</span>
+            </div>
+
+            <div class="control">
+                <label>🔴 Gama Roja</label>
+                <input type="range" id="rojoSlider" min="-20" max="20" value="0">
+                <span id="rojoValor">0°</span>
+            </div>
+
+        </div>
+
+        <div class="bandera">
+            <div id="verde" class="franja"></div>
+
+            <div class="franja blanca">
+                <img src="aguila mexico.png" alt="Escudo México">
+            </div>
+
+            <div id="rojo" class="franja"></div>
+        </div>
+
+    </div>
+    <div class="creditos">
+    <h3>Integrantes</h3>
+    <p>Camargo Granados Brayan - 23200815</p>
+    <p>De la Cruz Hernandez Martin - 23200828</p>
+    <p>Rodriguez Martinez Axel Gael - 23200891</p>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
